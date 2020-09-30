@@ -17,7 +17,7 @@ library(tidytext)
 
 ## importando texto
 
-discursos <- read_excel("C:/Users/hsneto/Desktop/discursos/discursos_alfa.xlsx")
+discursos <- read_excel("discursos_alfa.xlsx")
 
 discursos = subset(discursos, select = -c(...1, id))
 discursos$Data <- as.Date(discursos$Data)
